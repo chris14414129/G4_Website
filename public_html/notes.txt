@@ -1,0 +1,25 @@
+--date time class for timetable
+
+SELECT * FROM db_group4_1516.attendances 
+INNER JOIN timetables ON  timetables.timetable_id = attendances.timetable_id
+INNER JOIN sessions 
+ON sessions.session_id = timetables.session_id
+INNER JOIN modules 
+ON modules.module_id = sessions.mod_id
+WHERE student_id = 1;
+
+SELECT * FROM db_group4_1516.attendances 
+INNER JOIN timetables ON  timetables.timetable_id = attendances.timetable_id
+INNER JOIN sessions 
+ON sessions.session_id = timetables.session_id
+INNER JOIN modules 
+ON modules.module_id = sessions.mod_id
+WHERE sessions.session_id = 12	
+AND attendances.time = '2019-00-00 00:00:00'
+;
+
+INNER JOIN modules 
+ON modules.module_id = sessions.mod_id 
+WHERE course_id = 1;
+
+(time, "09:00:00", "10:00:00", "11:00:00", "12:00:00", "13:00:00", "14:00:00", "15:00:00", "16:00:00", "17:00:00", "18:00:00");
