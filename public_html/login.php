@@ -18,7 +18,7 @@
 
 			if ($stmt->rowCount() > 0) {
 				$_SESSION['loggedin'] = true;
-				header("Location: attendance.php");
+				header("Location: index.php");
 			}
 			
 		elseif (isset($_POST['submit'])) {
@@ -50,13 +50,17 @@
 
 			<div class="content">
 
-				<form method="POST">
-					<label>Username:</label>
-					<input type="text" name="username"/>
-					<label>Password:</label>
-					<input type="password" name="password"/>
-					<input type="submit" name="submit" value="Log In"/>
-				</form>
+				<div class="login">
+				
+					<form method="POST">
+						<label>Username:</label>
+						<input type="text" name="username"/>
+						<label>Password:</label>
+						<input type="password" name="password"/>
+						<input type="submit" name="submit" value="Log In"/>
+					</form>
+				
+				</div>
 
 			</div>
 			<?php require 'footer.php';?>

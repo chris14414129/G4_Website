@@ -14,7 +14,7 @@
 			<div class="content">
 
 				<main>
-					<img src="uni.jpg" align="center" alt="University of Northampton" style="width:900px;height:228px;">
+					<img src="uni.jpg" alt="University of Northampton" style="width:1000px;height:250px;">
 					<p align="center">Here you can track your course details!</p>
 				</main>
 			</div>
